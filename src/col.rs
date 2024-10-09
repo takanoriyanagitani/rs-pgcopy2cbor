@@ -25,8 +25,7 @@ impl Col {
                 raw: vec![],
             }),
             _ => {
-                let mut raw: Vec<u8> = Vec::with_capacity(length as usize);
-                raw.resize(length as usize, 0);
+                let mut raw: Vec<u8> = vec![0; length as usize];
                 let buf: &mut [u8] = &mut raw;
                 rdr.read_exact(buf)?;
                 Ok(Self { length, raw })
