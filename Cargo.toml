@@ -2,6 +2,10 @@
 name = "rs-pgcopy2cbor"
 version = "0.1.0"
 edition = "2021"
+description = "PGCOPY -> CBOR(PostgreSQL columns -> CBOR byte strings)"
+license = "Apache-2.0"
+documentation = "https://docs.rs/crate/rs-pgcopy2cbor/latest"
+repository = "https://github.com/takanoriyanagitani/rs-pgcopy2cbor"
 
 [lints.rust]
 unsafe_code = "forbid"
